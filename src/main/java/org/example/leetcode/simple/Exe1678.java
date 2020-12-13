@@ -1,5 +1,7 @@
 package org.example.leetcode.simple;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -84,7 +86,8 @@ public class Exe1678 {
     return sb.toString();
   }
 
-  public static void main(String[] args) {
+  @Test
+  public void test1() {
     String command = "G()(al)()()()cdsdefsd(al)(al)";
     long t1 = System.currentTimeMillis();
     System.out.println(interpret(command));
